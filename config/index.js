@@ -11,7 +11,7 @@ if(!isThere(envFilePath))
   console.log("Environment file missing")
 else
   environmentOptions = require(envFilePath) 
-  projectName = environmentOptions.projectName || "hid-assignment-final"
+  projectName = environmentOptions.projectName || "suggest-cities"
 module.exports = {
   port: environmentOptions.server.port,
   databaseUrl: environmentOptions.database.path + environmentOptions.database.name,
